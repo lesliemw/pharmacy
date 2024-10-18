@@ -15,12 +15,14 @@ export const metadata = {
     "Pharmacy dispensing system for use in the hospital and community pharmacy settings.",
 };
 import "@/app/_styles/globals.css";
+import SideNavBar from "./_components/SideNavBar";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} `}>
         <NavBar />
+        <SideNavBar />
       </body>
     </html>
   );
