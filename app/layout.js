@@ -23,7 +23,7 @@ function RootLayout({ children }) {
       lang="en"
       className="  no-scrollbar overflow-x-hidden overflow-y-scroll"
     >
-      <body className={`${montserrat.className}`}>
+      <body className={`${montserrat.className} cursor-pointer`}>
         <div className="grid gap-10  sm:grid-cols-[200px_1fr] w-full h-full ">
           <NavBar />
           <SideNavBar />

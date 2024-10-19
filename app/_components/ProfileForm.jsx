@@ -8,15 +8,15 @@ const user = {
 };
 function ProfileForm() {
   return (
-    <form className="m-20 place-center font-themeFont w-auto" method="PATCH">
+    <form className="m-20 place-center w-auto" method="PATCH">
       <div className="md:space-y-12 ">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">
             Profile Details
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 grid-rows-4 gap-x-6 gap-y-8 sm:grid-cols-3">
-            <div className="row-span-1 col-span-1 sm:col-span-3 ">
+          <div className="mt-10 grid grid-cols-1 grid-rows-4 sm:grid-rows-2 gap-x-6 gap-y-8 sm:grid-cols-2">
+            <div className="row-span-1 col-span-1 sm:col-span-1 ">
               <label
                 htmlFor="fname"
                 className="block text-sm font-medium leading-6 text-gray-900"
@@ -35,7 +35,7 @@ function ProfileForm() {
               </div>
             </div>
 
-            <div className="row-span-1 col-span-1 sm:col-span-3 ">
+            <div className="row-span-1 col-span-1 sm:col-span-1 ">
               <label
                 htmlFor="lname"
                 className="block text-sm font-medium leading-6 text-gray-900"
@@ -54,7 +54,7 @@ function ProfileForm() {
               </div>
             </div>
 
-            <div className="row-span-1 col-span-1 sm:col-span-3 ">
+            <div className="row-span-1 col-span-1 sm:col-span-1 ">
               <label className="block text-sm font-medium leading-6 text-gray-900">
                 Username
               </label>
@@ -65,12 +65,12 @@ function ProfileForm() {
                   type="text"
                   defaultValue={user?.username}
                   disabled
-                  className="disabled:ring-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
+                  className="disabled:ring-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
                 />
               </div>
             </div>
 
-            <div className="row-span-1 col-span-1 sm:col-span-3 ">
+            <div className="row-span-1 col-span-1 sm:col-span-1 ">
               <label
                 htmlFor="occupation"
                 className="block text-sm font-medium leading-6 text-gray-900"
@@ -84,7 +84,7 @@ function ProfileForm() {
                   id="occupation"
                   defaultValue={user?.occupation}
                   disabled
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:ring-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed  sm:text-sm sm:leading-6 cursor-pointer px-2"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 disabled:ring-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed  sm:text-sm sm:leading-6 cursor-pointer px-2"
                 />
               </div>
             </div>

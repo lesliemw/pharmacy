@@ -4,7 +4,7 @@ import { lowerNavData, navData } from "../lib/sideNavData";
 function SideNavBar() {
   return (
     <div className="fixed sm:grid hidden flex-2 h-screen w-[15rem] flex-col rounded-xl bg-indigo-50 bg-clip-border p-4  text-gray-700 shadow-xl ">
-      <div className="mt-20 p-4 absolute">
+      <div className="mt-16 p-4 absolute">
         {navData.map((data, i) => (
           <SideNavButton key={i} href={data.href}>
             {data.icon}
