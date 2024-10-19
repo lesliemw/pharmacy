@@ -21,8 +21,11 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} `}>
-        <NavBar />
-        <SideNavBar />
+        <div className="grid grid-cols-[16rem_1fr] h-full">
+          <NavBar />
+          <SideNavBar />
+          <main className="mt-14 w-full p-6">{children}</main>
+        </div>
       </body>
     </html>
   );
