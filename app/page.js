@@ -1,5 +1,3 @@
-import RootLayout from "./layout";
-
 function page() {
   return <div></div>;
 }

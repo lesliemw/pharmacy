@@ -1,3 +1,4 @@
+import "@/app/_styles/globals.css";
 import { Montserrat } from "next/font/google";
 import NavBar from "./_components/NavBar";
 
@@ -14,17 +15,21 @@ export const metadata = {
   description:
     "Pharmacy dispensing system for use in the hospital and community pharmacy settings.",
 };
-import "@/app/_styles/globals.css";
 import SideNavBar from "./_components/SideNavBar";
 
 function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className} `}>
-        <div className="grid grid-cols-[16rem_1fr] h-full">
+    <html
+      lang="en"
+      className="  no-scrollbar overflow-x-hidden overflow-y-scroll"
+    >
+      <body className={`${montserrat.className}`}>
+        <div className="grid gap-10  sm:grid-cols-[200px_1fr] w-full h-full ">
           <NavBar />
           <SideNavBar />
-          <main className="mt-14 w-full p-6">{children}</main>
+          <main className="mt-0 sm:mt-14 w-full px-10 sm:p-10  ">
+            {children}
+          </main>
         </div>
       </body>
     </html>
