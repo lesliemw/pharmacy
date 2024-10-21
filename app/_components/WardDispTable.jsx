@@ -1,6 +1,6 @@
-import { headers, stockData } from "../lib/stockData";
+import { headers, wardStockData } from "../lib/WardDispData";
 
-function StockTable() {
+function WardDispTable() {
   return (
     <table className="table-fixed rounded-md text-sm text-left rtl:text-right w-full">
       <thead className="text-xs bg-indigo-600 text-indigo-50 uppercase">
@@ -13,14 +13,13 @@ function StockTable() {
         </tr>
       </thead>
       <tbody className="">
-        {stockData.map((stock, i) => (
+        {wardStockData.map((stock, i) => (
           <tr key={i} className="border-b odd:bg-indigo-50">
             <td className="text-md px-6 py-3">{stock.name}</td>
             <td className="text-md px-6 py-3">{stock.strength}</td>
-            <td className="text-md px-6 py-3">{stock.brand}</td>
+            <td className="text-md px-6 py-3">{stock.qty}</td>
             <td className="text-md px-6 py-3">€ {stock.price}</td>
-            <td className="text-md px-6 py-3">{stock.packSize}</td>
-            <td className="text-md px-6 py-3">{stock.stock}</td>
+            <td className="text-md px-6 py-3">{stock.date}</td>
           </tr>
         ))}
       </tbody>
@@ -28,4 +27,4 @@ function StockTable() {
   );
 }
 
-export default StockTable;
+export default WardDispTable;
