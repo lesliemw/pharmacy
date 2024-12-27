@@ -18,8 +18,8 @@ function StockTable() {
             <td className="text-md px-6 py-3">{stock.name}</td>
             <td className="text-md px-6 py-3">{stock.strength}</td>
             <td className="text-md px-6 py-3">{stock.brand}</td>
-            <td className="text-md px-6 py-3">€ {stock.price}</td>
             <td className="text-md px-6 py-3">{stock.packSize}</td>
+            <td className="text-md px-6 py-3">€ {stock.price}</td>
             <td className="text-md px-6 py-3">{stock.stock}</td>
           </tr>
         ))}
